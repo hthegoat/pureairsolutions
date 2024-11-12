@@ -1,0 +1,225 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="About Us - PureAir Solutions">
+	<main>
+		<div class="about-hero">
+			<h1>About <span class="text-gradient">PureAir Solutions</span></h1>
+			<p>Your trusted partner in indoor air quality and mold remediation</p>
+		</div>
+
+		<section class="about-content">
+			<div class="mission-section">
+				<h2>Our Mission</h2>
+				<p>At PureAir Solutions, we're committed to creating healthier indoor environments through expert mold assessment, air quality testing, and remediation services. Our team of certified professionals uses state-of-the-art technology and proven methods to identify and address indoor air quality concerns.</p>
+			</div>
+
+			<div class="values-section">
+				<h2>Our Core Values</h2>
+				<div class="values-grid">
+					<div class="value">
+						<h3>Excellence</h3>
+						<p>We maintain the highest standards in all our services, from initial assessment to final remediation.</p>
+					</div>
+					<div class="value">
+						<h3>Integrity</h3>
+						<p>We operate with complete transparency and honesty in all our client interactions.</p>
+					</div>
+					<div class="value">
+						<h3>Innovation</h3>
+						<p>We utilize the latest technology and methods to provide superior results.</p>
+					</div>
+					<div class="value">
+						<h3>Safety</h3>
+						<p>We prioritize the health and safety of our clients and team members above all else.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="team-section">
+				<h2>Our Expert Team</h2>
+				<div class="team-grid">
+					<div class="team-member">
+						<img src="/team/john-smith.jpg" alt="John Smith" />
+						<h3>John Smith</h3>
+						<p class="title">Lead Mold Inspector</p>
+						<p class="cert">ACAC Certified</p>
+					</div>
+					<div class="team-member">
+						<img src="/team/sarah-johnson.jpg" alt="Sarah Johnson" />
+						<h3>Sarah Johnson</h3>
+						<p class="title">Air Quality Specialist</p>
+						<p class="cert">IAQA Certified</p>
+					</div>
+					<div class="team-member">
+						<img src="/team/michael-chen.jpg" alt="Michael Chen" />
+						<h3>Michael Chen</h3>
+						<p class="title">Remediation Expert</p>
+						<p class="cert">IICRC Certified</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="certifications-section">
+				<h2>Our Certifications</h2>
+				<div class="cert-grid">
+					<div class="certification">
+						<h3>ACAC</h3>
+						<p>American Council for Accredited Certification</p>
+					</div>
+					<div class="certification">
+						<h3>IAQA</h3>
+						<p>Indoor Air Quality Association</p>
+					</div>
+					<div class="certification">
+						<h3>IICRC</h3>
+						<p>Institute of Inspection Cleaning and Restoration Certification</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="cta-section">
+				<h2>Ready to Work with Us?</h2>
+				<p>Contact our team today for expert air quality and mold remediation services</p>
+				<a href="/contact" class="cta-button">Get in Touch</a>
+			</div>
+		</section>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 1200px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	.about-hero {
+		text-align: center;
+		padding: 4rem 0;
+		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
+		border-radius: 1rem;
+		margin-bottom: 3rem;
+	}
+	h1 {
+		font-size: 3rem;
+		font-weight: 700;
+		line-height: 1.2;
+		margin-bottom: 1rem;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.about-content {
+		padding: 2rem;
+	}
+	.mission-section {
+		text-align: center;
+		max-width: 800px;
+		margin: 0 auto 4rem;
+	}
+	.values-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 2rem;
+		margin-top: 2rem;
+	}
+	.value {
+		background: rgba(255, 255, 255, 0.05);
+		padding: 2rem;
+		border-radius: 1rem;
+		text-align: center;
+		transition: transform 0.3s ease;
+	}
+	.value:hover {
+		transform: translateY(-5px);
+	}
+	.value h3 {
+		color: rgb(var(--accent-light));
+		margin-bottom: 1rem;
+	}
+	.team-section {
+		margin: 4rem 0;
+	}
+	.team-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 2rem;
+		margin-top: 2rem;
+	}
+	.team-member {
+		background: rgba(255, 255, 255, 0.05);
+		padding: 2rem;
+		border-radius: 1rem;
+		text-align: center;
+	}
+	.team-member img {
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		margin-bottom: 1rem;
+		object-fit: cover;
+	}
+	.team-member h3 {
+		color: rgb(var(--accent-light));
+		margin-bottom: 0.5rem;
+	}
+	.team-member .title {
+		color: #9ca3af;
+		margin: 0;
+	}
+	.team-member .cert {
+		color: rgb(var(--accent-light));
+		font-size: 0.9rem;
+		margin-top: 0.5rem;
+	}
+	.certifications-section {
+		margin: 4rem 0;
+	}
+	.cert-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 2rem;
+		margin-top: 2rem;
+	}
+	.certification {
+		background: rgba(255, 255, 255, 0.05);
+		padding: 2rem;
+		border-radius: 1rem;
+		text-align: center;
+	}
+	.certification h3 {
+		color: rgb(var(--accent-light));
+		margin-bottom: 1rem;
+	}
+	.cta-section {
+		text-align: center;
+		background: linear-gradient(45deg, rgb(var(--accent-dark)), rgb(var(--accent)));
+		padding: 4rem 2rem;
+		border-radius: 1rem;
+		margin-top: 4rem;
+	}
+	.cta-button {
+		display: inline-block;
+		background: white;
+		color: rgb(var(--accent));
+		padding: 1rem 2rem;
+		border-radius: 2rem;
+		text-decoration: none;
+		font-weight: 600;
+		margin-top: 2rem;
+		transition: all 0.3s ease;
+	}
+	.cta-button:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+	}
+</style>

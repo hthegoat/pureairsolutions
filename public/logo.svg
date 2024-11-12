@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="50" viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M20 25C20 31.0751 25.0751 36 31 36C36.9249 36 42 31.0751 42 25C42 18.9249 36.9249 14 31 14C25.0751 14 20 18.9249 20 25Z" fill="#0066FF"/>
+  <path d="M31 14C25.0751 14 20 18.9249 20 25C20 31.0751 25.0751 36 31 36" stroke="white" stroke-width="2"/>
+  <path d="M50 25H160" stroke="#0066FF" stroke-width="2"/>
+  <text x="55" y="30" font-family="Arial" font-size="20" fill="#FFFFFF">PureAir Solutions</text>
+</svg>
